@@ -27,3 +27,15 @@ session_Start();
         <script src="" async defer></script>
     </body>
 </html>
+
+//Inside the PHP code block, the if statement checks if the session variable first_visit is not set. If it's not set, it means the user is visiting the page for the first time.
+
+//If it's the first visit, the current timestamp is stored in the first_visit session variable using $_SESSION['first_visit'] = time();.
+
+//A welcome message is echoed, indicating that it's the user's first visit to the page.
+
+//If the first_visit session variable is set, it means the user has visited the page before. The value of first_visit is assigned to the variable $last_visit.
+
+//The time difference between the current visit and the previous visit is calculated by subtracting $last_visit from the current timestamp using time() - $last_visit.
+
+//A message is echoed, displaying the time difference in seconds since the last visit.
